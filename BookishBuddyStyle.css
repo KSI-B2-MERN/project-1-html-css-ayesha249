@@ -1,0 +1,245 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+strong {
+  color: #b798c0;
+}
+
+.Home {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  background-image: url("Images/bookshimmer.png");
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.sign-up-button {
+  margin-right: 20px;
+  background-color: #7f5e88;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-text{
+ 
+  animation: fadeIn 5s ease forwards; 
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
+
+/* .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.text-container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+} */
+
+.services-container {
+  background-color: #dcdcf9;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Service-text {
+  animation: slideInFromBottom 1s ease forwards;
+}
+
+@keyframes contactslideInFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Contact-text {
+  animation: contactslideInFromBottom 1s ease forwards;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  width: 250px;
+  background-color: #babae4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: white;
+}
+
+.ContactUs-container {
+  background-color: #d6bedd;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.contact-form button {
+  background-color: #7f5e88;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Footer {
+  background-color: #b798c0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Mobile phones and tablets (up to 767px) */
+@media (max-width: 767px) {
+  .text-container h1 {
+    font-size: 3rem;
+  }
+
+  .text-container p {
+    font-size: 1.2rem;
+  }
+
+  .services-container {
+    padding: 20px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablets and small laptops (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .text-container p {
+    font-size: 1.3rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Footer {
+    font-size: 0.9rem;
+  }
+}

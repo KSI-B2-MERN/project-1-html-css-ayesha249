@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BookishBuddy</title>
+    <link rel="stylesheet" href="BookishBuddyStyle.css">
+    <link rel="icon" type="image/x-icon" href="Images/book-16.ico">
+  </head>
+  <body>
+    <div class="Home">
+      <!---Background Image-->
+      <img
+        src="Images/Background.jpg"
+        class="absolute top-0 left-0 opacity-75"
+        style="height: 100%; width: 100%"
+      />
+
+      <header class="relative z-10 flex justify-between items-center px-6">
+        <!-- Logo -->
+        <div>
+          <img src="Images/logo.png" alt="Logo" class="h-24 ml-20 pt-0" />
+        </div>
+
+        <!-- Sign Up Button -->
+        <button
+          class="bg-[#7f5e88] hover:bg-[#5b3a64] text-white font-bold py-2 px-4 rounded mr-20"
+        >
+          SIGN IN
+        </button>
+      </header>
+
+      <!--Text-->
+      <div
+        class=" home-text z-10 absolute top-1/3 left-60 transform -translate-y-1/2 p-4 text-white"
+      >
+        <h1 class="text-6xl font-bold">
+          <strong>D</strong>iscover <strong>B</strong>ooks
+        </h1><br>
+        <p class="text-lg">Unleash the adventure of books Recommendations!</p>
+        <br />
+        <button
+          class="bg-[#7f5e88] hover:bg-[#5b3a64] text-white font-bold py-3 px-6 rounded mr-20"
+        >
+          SIGN UP NOW
+        </button>
+      </div>
+
+      <div class="animation">
+        <!-- Background Image -->
+        <div class="bg-image"></div>
+      </div>
+    </div>
+
+
+    <!--Services-->
+    <div class="services-container">
+     <div class="Service-text">
+      <h1 class="text-6xl font-bold text-white">
+        <strong>O</strong>ur <strong>S</strong>ervices</h1><br>
+        <p>We are dedicated to providing you with the best book recommendations tailored to your interests.</p>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="card-container">
+        <!-- Service Cards-->
+        <div class="card">
+          <div class="card-icon">&#x1F4D6;</div>
+          <div class="card-title">Library</div>
+          <div class="card-description">
+            We provide library of books where there are huge bulk of books from
+            every aspect of field.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#x1F4D8;</div>
+          <div class="card-title">Borrow</div>
+          <div class="card-description">
+            You can borrow the books from the library at any time.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#x1F4DC;</div>
+          <div class="card-title">Suggestion</div>
+          <div class="card-description">
+            You can get highly perfect books suggestions from every genre.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#x1F4B3;</div>
+          <div class="card-title">Subscription</div>
+          <div class="card-description">
+            You can get the subscription of our services to get unlimited
+            benefits.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Us -->
+
+    <div class="ContactUs-container">
+      <div class="Contact-text">
+      <h1 class="text-6xl font-bold text-white">
+        <strong>C</strong>ontact <strong>U</strong>s
+      </h1><br>
+      <p>If you have any questions or feedback, feel free to reach out to us.</p><br>
+      </div>
+      <form>
+          <label for="name">Name:</label>
+
+          <input type="text" id="name" name="name" required class="border-none outline-none"><br>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required class="border-none outline-none"><br>
+          <br>
+          <button
+          class="bg-[#7f5e88] hover:bg-[#5b3a64] text-white font-bold py-2 px-4 rounded"
+        >
+          SUBMIT
+        </button>
+      </form>
+      <br>
+      <p>Alternatively, you can contact us at:</p>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +1 123-456-7890</p>
+    </div>
+
+    <!--Footer-->
+    <div class="Footer">
+      <footer class="flex items-center justify-center space-x-2">
+       
+        <p>&copy; 2023</p><img src="Images/logo.png" alt="Logo" class="h-6" />  BookishBuddy. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
